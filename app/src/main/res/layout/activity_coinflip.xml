@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".CoinflipActivity">
+
+
+    <TextView
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/DarkGray"
+        android:textAlignment="center"
+        android:textColor="@color/Yellow"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bar" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000"
+        android:textColor="@color/Yellow"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bar"
+        app:layout_constraintEnd_toEndOf="@+id/bar"
+        app:layout_constraintStart_toStartOf="@+id/bar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="380dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/DarkGray"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar" />
+
+    <ToggleButton
+        android:id="@+id/btn_head"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:backgroundTint="@color/Yellow"
+        android:textColor="#FFFFFF"
+        android:textOff="Head \n2x"
+        android:textOn="0\n on Head"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <ToggleButton
+        android:id="@+id/btn_tail"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/Yellow"
+        android:textColor="#FFFFFF"
+        android:textOff="Tail \n2x"
+        android:textOn="0\n on Tail"
+        android:textSize="24sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_head"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/btn_head" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/Gray"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <EditText
+        android:id="@+id/input_betcoin"
+        android:layout_width="319dp"
+        android:layout_height="42dp"
+        android:inputType="numberDecimal"
+        android:text="0"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginBottom="9dp"
+        android:text="Bet amount :"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_flip"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="@color/Yellow"
+        android:text="Flip"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

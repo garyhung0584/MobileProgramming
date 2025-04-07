@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:id="@+id/btn_coinfilp"
+        android:layout_width="200dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="168dp"
+        android:backgroundTint="@color/Yellow"
+        android:text="Coin Flip"
+        android:textColor="@color/black"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btn_dice"
+        android:layout_width="200dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/Yellow"
+        android:text="Dice"
+        android:textColor="@color/black"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_coinfilp" />
+
+    <Button
+        android:id="@+id/btn_deposit"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/Yellow"
+        android:text="Deposit"
+        android:textColor="@color/black"
+        app:cornerRadius="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dice" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="516dp"
+        android:text="Balance:"
+        android:textAlignment="center"
+        android:textColor="@color/Gray"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-8dp"
+        android:layout_marginEnd="84dp"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_deposit"
+        app:layout_constraintTop_toTopOf="@+id/btn_deposit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
